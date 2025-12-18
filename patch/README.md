@@ -42,18 +42,14 @@ git status
 git diff
 ```
 
----
-
 ## Rollback (If needed)
-**Only execute this if you want to undo the patch application (e.g., if you made a mistake).**
+Only execute this if you want to undo the patch application (e.g., if you made a mistake).
 
 ```bash
 git restore .
 ```
 
----
-
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Resolving Conflicts (`.rej` files)
 If **Step 1** fails, the codes have diverged. Follow these steps to resolve conflicts manually:
@@ -66,7 +62,7 @@ If **Step 1** fails, the codes have diverged. Follow these steps to resolve conf
     ```
 
 2.  **Manual Resolution:**
-    * Navigate to the `psc/` directory.
+    * Navigate to the source directories.
     * Look for files ending in `.rej` (e.g., `main.c.rej`).
     * Open the corresponding source file and manually add the code shown in the `.rej` file.
     * **Delete** the `.rej` files once you have fixed the code.
